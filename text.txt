@@ -1,0 +1,79 @@
+XML
+ 21. Создать внешний репозиторий c названием XML
+ 22. Клонировать репозиторий XML на локальный компьютер ----- git clone git@github.com:nikolaev30qa/XML.git
+ 23. Внутри локального XML создать файл “new.xml” ------ touch new.xml
+ 24. Добавить файл под гит ------- touch text.txt
+ 25. Закоммитить файл ---------- git commit -m "add xml file"
+ 26. Отправить файл на внешний GitHub репозиторий ------ git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML:
+
+a) vim new.xml
+b) <about_me>
+	<firstName> Oleg </firstName>
+	<lastName> Nikolaev </lastName>
+	<age> 28 </age>
+	<pets> 4 </pets>
+	<futureSalary> 1.000.000$ </futureSalary>
+ </about_me>
+c) Ctrl+C
+
+ 28. Отправить изменения на внешний репозиторий:
+a) git add new.xml
+b) git commit -m "add description about yourself"
+c) git push
+
+ 29. Создать файл preferences.xml ----- touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML:
+<preferences>
+	<favoriteFilm> Forrest Gump </favoriteFilm>
+	<favoriteSer> Supernatural </favoriteSer>
+	<favoriteFoods> Spaghetti </favoriteFoods>
+	<favoriteSeason> Summer </favoriteSeason>
+	<favoriteCountry> United States of America </favoriteCountry>
+</preferences>
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML:
+<acquired_skills>                         
+	<skill_1> working with testing tools </skill_1>
+	<skill_2> working with test documentation </skill_2>
+	<skill_3> working with the bug tracking system </skill_3>
+	<skill_4> study of theory material </skill_4>
+</acquired_skills>
+
+ 32. Сделать коммит в одну строку ------- git add preferences.xml sklls.xml
+ 33. Отправить сразу 2 файла на внешний репозиторий ------- git commit -m "add preferences and skills"
+ 34. На веб интерфейсе создать файл bug_report.xml
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML:
+<bug_report>
+    <pre-conditions> 
+        <p> The UserB was created </p>
+     </pre-conditions> </p>
+  
+    <description> 
+      <p> User Info: The 'Undo' button is disabled after clicking the 'Save' button" </p>
+    </description>
+  
+     <step_to_reproduce> 
+       <p> Log in under UserB </p>
+       <p> Select the 'User Info' tab </p>
+       <p> Edit the information from 'User Name' field" </p>
+       <p> Click the 'Save' button" </p>
+       <p> Navigate to the 'Undo' button" </p>
+     </step_to_reproduce>
+       
+    <actual_result> 
+      <p> "The 'Undo' button is disabled after clicking the 'Save' button" </p>
+    </actual_result> </p>
+  
+    <expected_result> 
+      <p>"The 'Undo' button is activated after clicking the 'Save' button" </p>
+    </expected_result>
+</bug_report>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 38. Синхронизировать внешний и локальный репозиторий XML ------ git pull
+
