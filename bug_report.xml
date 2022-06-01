@@ -1,1 +1,25 @@
-
+<bug_report>
+    <pre-conditions> 
+      <p> The UserB was created 
+     </pre-conditions> </p>
+  
+    <description> 
+      <p> User Info: The 'Undo' button is disabled after clicking the 'Save' button" </p>
+    </description>
+  
+     <step_to_reproduce> 
+       <p> Log in under UserB </p>
+       <p> Select the 'User Info' tab </p>
+       <p> Edit the information from 'User Name' field" </p>
+       <p> Click the 'Save' button" </p>
+       <p> Navigate to the 'Undo' button" </p>
+     </step_to_reproduce>
+       
+    <actual_result> 
+      <p> "The 'Undo' button is disabled after clicking the 'Save' button" </p>
+    </actual_result> </p>
+  
+    <expected_result> 
+      <p>"The 'Undo' button is activated after clicking the 'Save' button" </p>
+    </expected_result>
+</bug_report>
